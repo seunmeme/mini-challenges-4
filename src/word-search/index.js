@@ -37,7 +37,7 @@ function checkWord(words, word, row, col, count){
   }
 
   if(count === word.length){
-    return word.splice(0);
+    word.splice(0);
   }
 // Put back the letter in the grid
   words[row][col] = word[count-1];

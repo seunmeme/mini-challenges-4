@@ -1,6 +1,6 @@
 function countIslands(grid) {
   let numOfIslands = 0;
-  if(grid === null || grid.length === 0){
+  if(grid === null || grid.length < 1){
     return 0;
   }
 
@@ -21,7 +21,7 @@ function dfs(grid, row, col){
   }
 
   grid[row][col] = 0;
-  
+
   dfs(grid, row+1, col);
   dfs(grid, row-1, col);
   dfs(grid, row, col+1);
