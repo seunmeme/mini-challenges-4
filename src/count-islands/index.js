@@ -1,8 +1,10 @@
 function countIslands(grid) {
-  let numOfIslands = 0;
+
   if(grid === null || grid.length < 1){
     return 0;
   }
+
+  let numOfIslands = 0;
 
   for(let i=0; i<grid.length; i++){
     for(let j=0; j<grid[i].length; j++){
@@ -11,7 +13,9 @@ function countIslands(grid) {
       }
     }
   }
+
   return numOfIslands;
+
 }
 
 
